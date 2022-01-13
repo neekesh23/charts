@@ -16,15 +16,15 @@ export class BarChartComponent implements OnInit {
       type: 'bar',
     },
     title: {
-      text: "John's Marks",
+      text: 'Cricket Score',
     },
     xAxis: {
-      categories: ['Maths', 'English', 'Science', 'Arts'],
+      categories: ['Sachin', 'Yuvraj', 'Dhoni'],
     },
     yAxis: {
       min: 0,
       title: {
-        text: 'Total Marks',
+        text: 'India Score',
       },
     },
     legend: {
@@ -37,9 +37,10 @@ export class BarChartComponent implements OnInit {
     },
     series: [
       {
-        name: 'John',
+        name: 'India ',
         type: 'bar',
-        data: [80, 90, 100, 50],
+        color: '#0000ff',
+        data: [100, 90, 45],
       },
     ],
   });
